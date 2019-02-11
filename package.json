@@ -1,0 +1,15 @@
+{
+  "name": "expressjs-validator-starter",
+  "version": "1.0.0",
+  "description": "start app for express-validator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vladimir fomene",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "expressjs": "^1.0.1"
+  }
+}
