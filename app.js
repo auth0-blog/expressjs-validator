@@ -6,6 +6,7 @@ var usersRouter = require('./routes/users');
 const app = express();
 const port = 3000;
 
+//Tell Express.js where to find your Javascript files.
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -15,7 +16,7 @@ app.set('view engine', 'pug');
 
 //Mount routers
 app.use('/', indexRouter);
-//app.use('/users', usersRouter);
+app.use('/users', usersRouter);
 
 app.listen(port, () => console.log(`Expressjs-Validator listening on port ${port}!`));
 
